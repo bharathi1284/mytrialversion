@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<suite name = "Page object" parallel="tests">
+	<test name = "LoginTest" allow-return-values="true">
+		<classes>
+			<class name = "com.pageobject.facebook.pages.testcase.LoginTest">
+			</class>
+		</classes>
+	</test>
+	<test name = "EditProfile" allow-return-values="true">
+		<classes>
+			<class name = "com.pageobject.facebook.pages.testcase.EditProfile">
+			</class>
+		</classes>
+	</test>
+</suite>

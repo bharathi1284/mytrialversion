@@ -1,0 +1,46 @@
+Hub->
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-2.52.0.jar -role hub -hubConfig hub.json
+
+Node 1->
+java -Dwebdriver.firefox.driver -jar C:/jars/selenium-server-standalone-2.53.0.jar -role rc -nodeConfig node1.json
+
+Node 2->
+java -Dwebdriver.firefox.driver -jar C:/jars/selenium-server-standalone-2.53.0.jar -role rc -nodeConfig node2.json
+
+
+to integrate with jenkins
+
+download jenkins.war file
+open cmd java -jar jenkins.war
+
+mvn antrun:run@compile - to run ant task from maven
+git on local reporsitory interacts with server github
+github is where the code resides
+for jenkins to interact with git hub we neeed ssh keys for security
+
+download git
+in jenkins install git plugin
+in manage jenkins-->configure system - under git give the path to git.exe
+
+open git bash and enter these commands
+1. pwd - will list the current directory
+2. mkdir .ssh - will create a directory .ssh
+3. cd .ssh
+4.ssh-keygen -t rsa -c "thanksgivingbaby2016@gmail.com" - to generate keys
+5.ssh -v git@github.com - to register local machine with github. knownhosts file will be generated in .ssh folder
+6.go to github-->ssetting and add the ssh public key
+7.copy the .ssh folder into git directory
+8.open cmd,go to bin folder of git
+9.type ssh.exe T git@github.com
+
+10.go to git bash, go to project folder in git bash and type
+git init
+11. An empty .git folder will be generated in project folder(will be a hidden folder)
+
+https://www.youtube.com/watch?v=Kp5BSBoOw8k
+
+
+
+
+
+

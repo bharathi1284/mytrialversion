@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Page_object">
+              <span class="suite-name border-skipped">Page object</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Page_object">
+                    <span>C:\Kalpan\secondroundofselenium\pageobject\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Page_object">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Page_object">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Page_object">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Page_object">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Page_object">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Page_object">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Page_object" class="hide-methods skipped suite-Page_object"> (hide)</a> <!-- hide-methods skipped suite-Page_object -->
+                      <a href="#" panel-name="suite-Page_object" class="show-methods skipped suite-Page_object"> (show)</a> <!-- show-methods skipped suite-Page_object -->
+                    </span>
+                    <div class="method-list-content skipped suite-Page_object">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Page_object" title="com.pageobject.facebook.pages.testcase.LoginTest" hash-for-method="doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Unsuccessful, Password=founder$, Runmode=N, Brows...)">doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Unsuccessful, Password=founder$, Runmode=N, Brows...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Page_object -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Page_object" class="hide-methods passed suite-Page_object"> (hide)</a> <!-- hide-methods passed suite-Page_object -->
+                      <a href="#" panel-name="suite-Page_object" class="show-methods passed suite-Page_object"> (show)</a> <!-- show-methods passed suite-Page_object -->
+                    </span>
+                    <div class="method-list-content passed suite-Page_object">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Page_object" title="com.pageobject.facebook.pages.testcase.LoginTest" hash-for-method="doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)">doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Page_object" title="com.pageobject.facebook.pages.testcase.EditProfile" hash-for-method="testprofile({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)">testprofile({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Page_object -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Page_object" class="panel Page_object">
+          <div class="suite-Page_object-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.pageobject.facebook.pages.testcase.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Unsuccessful, Password=founder$, Runmode=N, Brows...)">
+                  </a> <!-- doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Unsuccessful, Password=founder$, Runmode=N, Brows...) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Unsuccessful, Password=founder$, Runmode=N, Browser=Chrome})</span>
+                  <div class="stack-trace">org.testng.SkipException: LoginTest
+	at com.pageobject.facebook.pages.testcase.LoginTest.doLogin(LoginTest.java:36)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Page_object-class-skipped -->
+          <div class="suite-Page_object-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pageobject.facebook.pages.testcase.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)">
+                  </a> <!-- doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=Mozilla})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Page_object-class-passed -->
+          <div class="suite-Page_object-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pageobject.facebook.pages.testcase.EditProfile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testprofile({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)">
+                  </a> <!-- testprofile({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...) -->
+                  <span class="method-name">testprofile</span>
+                  <span class="parameters">({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=Mozilla})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Page_object-class-passed -->
+        </div> <!-- panel Page_object -->
+        <div panel-name="test-xml-Page_object" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Kalpan\secondroundofselenium\pageobject\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Page object&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;LoginTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pageobject.facebook.pages.testcase.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTest --&gt;
+  &lt;test name=&quot;EditProfile&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pageobject.facebook.pages.testcase.EditProfile&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EditProfile --&gt;
+&lt;/suite&gt; &lt;!-- Page object --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Page_object" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Page object</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EditProfile (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Page_object" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Page object</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Page_object" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Page object</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Page_object');
+function tableData_Page_object() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testprofile')
+data.setCell(0, 2, 'com.pageobject.facebook.pages.testcase.EditProfile')
+data.setCell(0, 3, 29685);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'doLogin')
+data.setCell(1, 2, 'com.pageobject.facebook.pages.testcase.LoginTest')
+data.setCell(1, 3, 21377);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'doLogin')
+data.setCell(2, 2, 'com.pageobject.facebook.pages.testcase.LoginTest')
+data.setCell(2, 3, 0);
+window.suiteTableData['Page_object']= { tableData: data, tableDiv: 'times-div-Page_object'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-Page_object">
+              </div> <!-- times-div-Page_object -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Page_object" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Page object</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Page_object" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Page_object" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pageobject.facebook.pages.testcase.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pageobject.facebook.pages.testcase.EditProfile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testprofile({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Success, Password=founder3$, Runmode=Y, Browser=M...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pageobject.facebook.pages.testcase.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">endtest</span>
+                <span class="method-start">21378 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">doLogin({Username=bharathi_sbn@yahoo.co.in, ExpectedResult=Unsuccessful, Password=founder$, Runmode=N, Brows...)</span>
+                <span class="method-start">23209 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endtest</span>
+                <span class="method-start">23210 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pageobject.facebook.pages.testcase.EditProfile</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">endtest</span>
+                <span class="method-start">29685 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

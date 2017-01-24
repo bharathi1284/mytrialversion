@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Page object]" parallel="tests">
+  <test name="LoginTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.pageobject.facebook.pages.testcase.LoginTest">
+        <methods>
+          <include name="endtest"/>
+          <include name="doLogin" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.pageobject.facebook.pages.testcase.LoginTest -->
+      <class name="com.pageobject.facebook.pages.testcase.EditProfile">
+        <methods>
+          <include name="endtest"/>
+        </methods>
+      </class> <!-- com.pageobject.facebook.pages.testcase.EditProfile -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Page object] -->
